@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+
+    {% load static %}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Hello, world!</title>
+  </head>
+  <style>
+    @font-face {
+        font-family: "My Custom Font";
+        src: url(Antro_Vectra.otf) format("truetype");
+    }
+    .logo{
+        margin: 30px 10px 5px 0;
+        
+    }
+   #rcorners2 {
+      border-radius: 65px;
+      border: 3px solid rgb(164, 243, 161);;
+      width: 450px;
+      text-align: center;
+      margin: 20px;
+      background-color: rgba(255,249,248,1);
+      height: 600px;  
+    }
+    .heading{
+        margin-top: 150px;
+        font-family: "My Custom Font";
+        text-align: center;
+        font-weight: 100;
+        font-size: 30px;
+    }
+    </style>
+  <body>
+    <div id="rcorners2">
+        <img class="logo" src="{% static 'assets/images/' %}" width="95px" alt="">
+        <span class="heading">Home </span>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  </body>
+</html>
