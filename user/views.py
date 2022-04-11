@@ -1,20 +1,20 @@
-from ast import Expression
-import email
+# from ast import Expression
+# import email
 from email.policy import HTTP
-import http
-from json import JSONEncoder
-from lib2to3.pgen2 import token
-from msilib.schema import SelfReg
-from tkinter import ACTIVE
+# import http
+# from json import JSONEncoder
+# from lib2to3.pgen2 import token
+# from msilib.schema import SelfReg
+# from tkinter import ACTIVE
 from unicodedata import name
 from urllib import response
 import uuid
 from django.shortcuts import render
 
 from .forms import CommentForm
-from email.mime.text import MIMEText
-from email.mime.image import MIMEImage
-from email.mime.multipart import MIMEMultipart
+# from email.mime.text import MIMEText
+# from email.mime.image import MIMEImage
+# from email.mime.multipart import MIMEMultipart
 import smtplib,ssl
 from .models import StaticSubscribe
 from email.message import EmailMessage

@@ -35,13 +35,13 @@ SECRET_KEY = 'django-insecure-l*g6$bwkkxgcn1s@uf(+29eo8l(wlxyk*^xx2%=91kpw+6tgu)
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-TEMPLATE_DEBUG = DEBUG   
+TEMPLATE_DEBUG = True 
 
 ALLOWED_HOSTS = ['petishh.herokuapp.com','127.0.0.1'] #'petishh.herokuapp.com','127.0.0.1'
 # Application definition
 
 INSTALLED_APPS = [
-    'whitenoise.runserver_nostatic',
+    # 'whitenoise.runserver_nostatic',
     'jazzmin',
     # 'adminlte3',
     # 'adminlte3_theme',
@@ -50,11 +50,10 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
+    # 'django.contrib.staticfiles',
     'django_extensions',
     'drf_yasg',
     'rest_framework',
-    # 'staticfiles',
     # 'phonenumber_field',
     'django_countries',
     'randompinfield',
@@ -216,12 +215,12 @@ WSGI_APPLICATION = 'petishh.wsgi.application'
 # load_dotenv(find_dotenv())
 # DATABASES={'default':dj_database_url.config(default='sqlite:///db.sqlite3',conn_max_age=600)}
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 
 
 # import dj_database_url
@@ -229,16 +228,16 @@ DATABASES = {
 # db_from_env = dj_database_url.config(conn_max_age=600)
 # DATABASES['default'].update(db_from_env)
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.mysql', 
-#         'NAME': 'petish',
-#         'USER': 'root',
-#         'PASSWORD': 'root123',
-#         'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
-#         'PORT': '3306',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql', 
+        'NAME': 'petish',
+        'USER': 'root',
+        'PASSWORD': 'root123',
+        'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
+        'PORT': '3306',
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
