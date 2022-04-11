@@ -1,12 +1,12 @@
-import site
-from tkinter.ttk import Style
+# import site
+# from tkinter.ttk import Style
 from django.contrib import admin
-from django.contrib.admin.options import ModelAdmin
-from django.db import models
+# from django.contrib.admin.options import ModelAdmin
+# from django.db import models
 # from django.utils.html import format_html
 
 # Register your models here.
-from .models import  Users,AbstractUser, Profileinfo
+from .models import  Users
 # admin.site.site_title="PETISHH ADMIN"
 # admin.site.site_url="http://petishh.com"
 admin.site.site_header = "PETISHH ADMIN" 
