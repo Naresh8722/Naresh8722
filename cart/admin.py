@@ -2,9 +2,9 @@ from django.contrib import admin
 from django.db.models import Count
 from .models import Cart, Coupon, DeliveryCost, Orders, Payment, UserProfile, Address
 
-@admin.register(DeliveryCost)
-class DeliveryCostAdmin(admin.ModelAdmin):
-    list_display=['status','cost_per_delivery','cost_per_product','fixed_cost','created_at']
+# @admin.register(DeliveryCost)
+# class DeliveryCostAdmin(admin.ModelAdmin):
+#     list_display=['status','cost_per_delivery','cost_per_product','fixed_cost','created_at']
 
 @admin.register(Cart)
 class CartAdmin(admin.ModelAdmin):
